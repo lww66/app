@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+    
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav header">
+	    <div class="mui-input-row mui-search" id="searchWrp">
+	    	<span class="search mui-icon mui-icon-search" id="search"><p>哔哩哔哩</p></span>
+	        <input type="search" id="searchBox" placeholder="哔哩哔哩">
+	        <span class="sao mui-icon mui-icon-camera" id="sao"></span>
+	    </div>
+	    <a href="html/download.html" style="float: right"><span class="mui-icon mui-icon-pulldown i"></span></a>
+	</header>
+	
+	<!--下拉刷新容器-->
+	<div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+	  <div class="mui-scroll">
+	    <!--数据列表-->
+	    <ul class="mui-table-view mui-table-view-chevron menu">
+	        <!--<li class="mui-table-view-cell">
+				
+			<li>-->
+			<div class="content">
+				<a href="#">
+					<span class="mui-icon mui-icon-bars"></span>
+					<p>排行</p>
+				</a>
+				<a href="#">
+					<span class="mui-icon mui-icon-bars"></span>
+					<p>分类</p>
+				</a>
+				<a href="#">
+					<span class="mui-icon mui-icon-bars"></span>
+					<p>新游</p>
+				</a>
+				<a href="#">
+					<span class="mui-icon mui-icon-bars"></span>
+					<p>单机</p>
+				</a>
+				<a href="#">
+					<span class="mui-icon mui-icon-bars"></span>
+					<p>腾讯</p>
+				</a>
+			</div>
+			<div class="content">
+				<a href="#">
+					<span class="mui-icon mui-icon-bars"></span>
+					<p>赛事</p>
+				</a>
+				<a href="#">
+					<span class="mui-icon mui-icon-bars"></span>
+					<p>网游</p>
+				</a>
+				<a href="#">
+					<span class="mui-icon mui-icon-bars"></span>
+					<p>礼包</p>
+				</a>
+				<a href="#">
+					<span class="mui-icon mui-icon-bars"></span>
+					<p>次元町</p>
+				</a>
+				<a href="#">
+					<span class="mui-icon mui-icon-bars"></span>
+					<p>游戏论坛</p>
+				</a>
+			</div>
+			
+			<!--火爆小视频-->
+	    <div class="hot-soft" style="padding-top:0">
+	    	<!--<div class="title">
+	    		<h3>热门应用</h3><span>></span>
+	    	</div>-->
+	    	<div class="items">
+	    		<a class="mui-control-item mui-active">
+					<img src="../images/qm.png" alt="" class="pic" />
+					<div>
+						<p>好看视频</p>
+						<p>林志玲代言娱乐短视频</p>
+						<p>84万次下载 676.20M</p>
+					</div>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item mui-active" style="margin-top:12px">
+					<img src="../images/qm.png" alt="" class="pic" />
+					<div>
+						<p>蓝月传奇</p>
+						<p>《蓝月传奇》是一款以高爆率、快节奏的一款游戏</p>
+						<p>84万次下载 676.20M</p>
+					</div>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item mui-active" style="margin-top:12px">
+					<img src="../images/qm.png" alt="" class="pic" />
+					<div>
+						<p>好看视频</p>
+						<p>林志玲代言娱乐短视频</p>
+						<p>84万次下载 676.20M</p>
+					</div>
+					<p class="download">下载</p>
+	            </a>
+	    	</div>
+	    </div>
+			
+	    </ul>
+	    
+	  </div>
+	</div>
+	
+	 <nav class="mui-bar mui-bar-tab menu-bottom">
+	    <a class="mui-tab-item" id="home">
+	        <span class="mui-icon mui-icon-home i"></span>
+	        <span class="mui-tab-label word">首页</span>
+	    </a>
+	    <a class="mui-tab-item mui-active" id="game">
+	        <span class="mui-icon mui-icon-paperplane i"></span>
+	        <span class="mui-tab-label word">游戏</span>
+	    </a>
+	    <a class="mui-tab-item" id="soft">
+	        <span class="mui-icon mui-icon-flag i"></span>
+	        <span class="mui-tab-label word">软件</span>
+	    </a>
+	    <a class="mui-tab-item" id="set">
+
+	        <span class="mui-icon mui-icon-gear i"><span class="mui-badge mui-badge-primary" style="border-radius:50%;height:20px;width:20px;text-align:center;top:-4px;line-height:20px;padding:0;">12</span></span>
+	        <span class="mui-tab-label word">管理</span>
+	    </a>
+	</nav>
+	
+		<script type="text/javascript">
+			mui.init({
+  				pullRefresh : {
+    			container:"#refreshContainer",//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+    			down : {
+      			contentover : "释放立即刷新",	//可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
+      			contentrefresh : "正在刷新...",//可选，正在刷新状态时，下拉刷新控件上显示的标题内容
+      			callback :pulldownRefresh //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+    			},
+    			
+    			up:{
+      			contentrefresh : "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+      			contentnomore:'没有更多数据了``',//可选，请求完毕若没有更多数据时显示的提醒内容；
+                callback: pullupRefresh
+    			}
+  			}
+			});
+			
+			//下拉方法
+			function pulldownRefresh() {
+        	setTimeout(function () {
+        	//querySelector()返回匹配指定选择器的第一个元素;
+        	//querySelectorAll()返回所有的元素
+        	//createElement创建一个文本节点
+            var table = document.body.querySelector('.items');
+            var cells = document.body.querySelectorAll('.mui-control-item');
+            for (var i = cells.length, len = i + 1; i < len; i++) {
+                var a = document.createElement('a');
+                a.className = 'mui-control-item';
+                a.innerHTML = '<img src="../images/qm.png" alt="" class="pic" /><div><p>好看视频</p><p>林志玲代言娱乐短视频</p></div><p class="download">下载</p>';
+                //下拉刷新，新纪录插到最前面；
+//              table.insertBefore(li, table.firstChild);
+                table.insertBefore(a, table.lastChild);/*后添加*/
+            }
+            mui('#refreshContainer').pullRefresh().endPulldownToRefresh(); //refresh completed
+        	}, 1500);
+    		}
+			var count = 0;
+			//上拉方法
+			 function pullupRefresh() {  
+        	setTimeout(function () {
+            mui('#refreshContainer').pullRefresh().endPullupToRefresh((++count > 5)); //参数为true代表没有更多数据了。
+            var table = document.body.querySelector('.items');
+            var cells = document.body.querySelectorAll('.mui-control-item');
+            for (var i = cells.length, len = i + 1; i < len; i++) {
+                var a = document.createElement('a');
+                a.className = 'mui-control-item';
+                a.innerHTML = '<img src="../images/qm.png" alt="" class="pic" /><div><p>好看视频</p><p>林志玲代言娱乐短视频</p></div><p class="download">下载</p>';
+                table.appendChild(a);
+            }
+             mui('#refreshContainer').pullRefresh().endPullupToRefresh();
+        	}, 1000);
+    		}
+			 
+			 			//tap为mui封装的单击事件，可参考手势事件章节
+document.getElementById('home').addEventListener('tap', function() {
+  //打开关于页面
+  mui.openWindow({
+    url: '../index.html',
+    id:'home'
+  });
+});
+		</script>
+</body>
+</html>

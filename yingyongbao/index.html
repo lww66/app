@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script type="text/javascript" src='js/jquery-3.3.1.min.js'></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav header">
+	    <div class="mui-input-row mui-search" id="searchWrp">
+	    	<span class="search mui-icon mui-icon-search" id="search"><p>哔哩哔哩</p></span>
+	        <input type="search" id="searchBox" placeholder="哔哩哔哩">
+	        <span class="sao mui-icon mui-icon-camera" id="sao"></span>
+	    </div>
+	    <a href="html/download.html" style="float: right"><span class="mui-icon mui-icon-pulldown i"></span></a>
+	</header>
+	
+	<!--下拉刷新容器-->
+	<div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+	  <div class="mui-scroll">
+	    <!--数据列表-->
+	    <ul class="mui-table-view mui-table-view-chevron menu">
+	        <!--<li class="mui-table-view-cell">
+				
+			<li>-->
+			<div class="content">
+				<a href="#">
+					<span class="mui-icon mui-icon-bars"></span>
+					<p>分类</p>
+				</a>
+				<a href="#">
+					<span class="mui-icon mui-icon-bars"></span>
+					<p>排行榜</p>
+				</a>
+				<a href="#">
+					<span class="mui-icon mui-icon-bars"></span>
+					<p>腾讯王卡</p>
+				</a>
+				<a href="#">
+					<span class="mui-icon mui-icon-bars"></span>
+					<p>优惠</p>
+				</a>
+				<a href="#">
+					<span class="mui-icon mui-icon-bars"></span>
+					<p>单机</p>
+				</a>
+				<a href="#">
+					<span class="mui-icon mui-icon-bars"></span>
+					<p>全部</p>
+				</a>
+			</div>
+			
+			<div id="slider" class="mui-slider mui-table-view-cell" >
+			  <div class="mui-slider-group mui-slider-loop">
+			    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+			    <div class="mui-slider-item mui-slider-item-duplicate">
+			      <a href="#">
+			        <img src="images/3.png" style="height: 200px;">
+			      </a>
+			    </div>
+			    <!-- 第一张 -->
+			    <div class="mui-slider-item">
+			      <a href="#">
+			        <img src="images/1.png" style="height: 200px;">
+			      </a>
+			    </div>
+			    <!-- 第二张 -->
+			    <div class="mui-slider-item">
+			      <a href="#">
+			        <img src="images/2.png" style="height: 200px;">
+			      </a>
+			    </div>
+			    <!-- 第三张 -->
+			    <div class="mui-slider-item">
+			      <a href="#">
+			        <img src="images/3.png" style="height: 200px;">
+			      </a>
+			    </div>
+			    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			    <div class="mui-slider-item mui-slider-item-duplicate">
+			      <a href="#">
+			        <img src="images/1.png" style="height: 200px;">
+			      </a>
+			    </div>
+			  </div>
+			  <div class="mui-slider-indicator">
+			    <div class="mui-indicator mui-active"></div>
+			    <div class="mui-indicator"></div>
+			    <div class="mui-indicator"></div>
+			  </div>
+			</div>
+			
+		<!--热门应用-->
+	    <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" id="scroll_h">
+	    	<div class="title">
+	    		<h4>热门应用</h4><span>></span>
+	    	</div>
+	        <div class="mui-scroll" id="scroll_box">
+	            <a class="mui-control-item">
+					<img src="images/qm.png" alt="" class="pic" />
+					<p class="name">QQ</p>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item">
+					<img src="images/qm.png" alt="" class="pic" />
+					<p class="name">QQ</p>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item">
+					<img src="images/qm.png" alt="" class="pic" />
+					<p class="name">QQ</p>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item">
+					<img src="images/qm.png" alt="" class="pic" />
+					<p class="name">QQ</p>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item">
+					<img src="images/qm.png" alt="" class="pic" />
+					<p class="name">QQ</p>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item">
+					<img src="images/qm.png" alt="" class="pic" />
+					<p class="name">QQ</p>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item">
+					<img src="images/qm.png" alt="" class="pic" />
+					<p class="name">QQ</p>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item">
+					<img src="images/qm.png" alt="" class="pic" />
+					<p class="name">QQ</p>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item">
+					<img src="images/qm.png" alt="" class="pic" />
+					<p class="name">QQ</p>
+					<p class="download">下载</p>
+	            </a>
+	        </div>
+	    </div>
+		<!--热门游戏-->
+	    <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" id="scroll_h">
+	    	<div class="title">
+	    		<h4>热门游戏</h4><span>></span>
+	    	</div>
+	        <div class="mui-scroll" id="scroll_box">
+	            <a class="mui-control-item">
+					<img src="images/qm.png" alt="" class="pic" />
+					<p class="name">QQ</p>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item">
+					<img src="images/qm.png" alt="" class="pic" />
+					<p class="name">QQ</p>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item">
+					<img src="images/qm.png" alt="" class="pic" />
+					<p class="name">QQ</p>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item">
+					<img src="images/qm.png" alt="" class="pic" />
+					<p class="name">QQ</p>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item">
+					<img src="images/qm.png" alt="" class="pic" />
+					<p class="name">QQ</p>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item">
+					<img src="images/qm.png" alt="" class="pic" />
+					<p class="name">QQ</p>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item">
+					<img src="images/qm.png" alt="" class="pic" />
+					<p class="name">QQ</p>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item">
+					<img src="images/qm.png" alt="" class="pic" />
+					<p class="name">QQ</p>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item">
+					<img src="images/qm.png" alt="" class="pic" />
+					<p class="name">QQ</p>
+					<p class="download">下载</p>
+	            </a>
+	        </div>
+	    </div>
+			<!--火爆小视频-->
+	    <div class="hot-soft">
+	    	<div class="title">
+	    		<h4>
+	    			人间值得欢乐
+	    			<p>宅也是一种生活态度</p>
+	    		</h4>
+	    		<span>></span>
+	    	</div>
+	    	<div class="items">
+	    		<a class="mui-control-item mui-active">
+					<img src="images/qm.png" alt="" class="pic" />
+					<div>
+						<p>好看视频</p>
+						<p>林志玲代言娱乐短视频</p>
+					</div>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item mui-active">
+					<img src="images/qm.png" alt="" class="pic" />
+					<div>
+						<p>好看视频</p>
+						<p>林志玲代言娱乐短视频</p>
+					</div>
+					<p class="download">下载</p>
+	            </a>
+	            <a class="mui-control-item mui-active">
+					<img src="images/qm.png" alt="" class="pic" />
+					<div>
+						<p>好看视频</p>
+						<p>林志玲代言娱乐短视频</p>
+					</div>
+					<p class="download">下载</p>
+	            </a>
+	    	</div>
+	    </div>
+			
+	    </ul>
+	    
+	  </div>
+	</div>
+	
+	 <nav class="mui-bar mui-bar-tab menu-bottom">
+	    <a class="mui-tab-item mui-active" id="home">
+	        <span class="mui-icon mui-icon-home i"></span>
+	        <span class="mui-tab-label word">首页</span>
+	    </a>
+	    <a class="mui-tab-item" id="game">
+	        <span class="mui-icon mui-icon-paperplane i"></span>
+	        <span class="mui-tab-label word">游戏</span>
+	    </a>
+	    <a class="mui-tab-item" id="soft">
+	        <span class="mui-icon mui-icon-flag i"></span>
+	        <span class="mui-tab-label word">软件</span>
+	    </a>
+	    <a class="mui-tab-item" id="set">
+
+	        <span class="mui-icon mui-icon-gear i"><span class="mui-badge mui-badge-primary" style="border-radius:50%;height:20px;width:20px;text-align:center;top:-4px;line-height:20px;padding:0;">12</span></span>
+	        <span class="mui-tab-label word">管理</span>
+	        
+	    </a>
+	</nav>
+	
+		<script type="text/javascript">
+			//获得slider插件对象
+			var gallery = mui('.mui-slider');
+			gallery.slider({
+  				interval:2000//自动轮播周期，若为0则不自动播放，默认为0；
+			});
+			mui.init({
+  				pullRefresh : {
+    			container:"#refreshContainer",//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+    			down : {
+      			contentover : "释放立即刷新",	//可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
+      			contentrefresh : "正在刷新...",//可选，正在刷新状态时，下拉刷新控件上显示的标题内容
+      			callback :pulldownRefresh //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+    			},
+    			
+    			up:{
+      			contentrefresh : "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+      			contentnomore:'没有更多数据了``',//可选，请求完毕若没有更多数据时显示的提醒内容；
+                callback: pullupRefresh
+    			}
+  			}
+			});
+			
+			//下拉方法
+			function pulldownRefresh() {
+        	setTimeout(function () {
+        	//querySelector()返回匹配指定选择器的第一个元素;
+        	//querySelectorAll()返回所有的元素
+        	//createElement创建一个文本节点
+            var table = document.body.querySelector('.items');
+            var cells = document.body.querySelectorAll('.mui-control-item');
+            for (var i = cells.length, len = i + 1; i < len; i++) {
+                var a = document.createElement('a');
+                a.className = 'mui-control-item';
+                a.innerHTML = '<img src="images/qm.png" alt="" class="pic" /><div><p>好看视频</p><p>林志玲代言娱乐短视频</p></div><p class="download">下载</p>';
+                //下拉刷新，新纪录插到最前面；
+//              table.insertBefore(li, table.firstChild);
+                table.insertBefore(a, table.lastChild);/*后添加*/
+            }
+            mui('#refreshContainer').pullRefresh().endPulldownToRefresh(); //refresh completed
+        	}, 1500);
+    		}
+			var count = 0;
+			//上拉方法
+			 function pullupRefresh() {  
+        	setTimeout(function () {
+            mui('#refreshContainer').pullRefresh().endPullupToRefresh((++count > 5)); //参数为true代表没有更多数据了。
+            var table = document.body.querySelector('.items');
+            var cells = document.body.querySelectorAll('.mui-control-item');
+            for (var i = cells.length, len = i + 1; i < len; i++) {
+                var a = document.createElement('a');
+                a.className = 'mui-control-item';
+                a.innerHTML = '<img src="images/qm.png" alt="" class="pic" /><div><p>好看视频</p><p>林志玲代言娱乐短视频</p></div><p class="download">下载</p>';
+                table.appendChild(a);
+            }
+             mui('#refreshContainer').pullRefresh().endPullupToRefresh();
+        	}, 1000);
+    		}
+			 
+			//tap为mui封装的单击事件，可参考手势事件章节
+document.getElementById('game').addEventListener('tap', function() {
+  //打开关于页面
+  mui.openWindow({
+    url: 'html/game.html', 
+    id:'game'
+  });
+});
+		</script>
+		<script type="text/javascript" charset="utf-8">
+      	(function($){
+//    		console.log(11111111);
+      		$('.mui-scroll-wrapper').scroll({     			
+      			bounce:true,
+      			indicators:true,
+      		});
+      	})(mui);
+    </script>
+</body>
+</html>

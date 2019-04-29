@@ -1,0 +1,145 @@
+*{
+	font-family: "微软雅黑";
+}
+header .head .land{
+	width:50%;	
+	float: left;
+	text-align: left;
+}
+header .head .land .i{
+	width: 35px;
+	height:35px;
+	border-radius: 50%;
+	background-color: #ccc;
+	text-align: center;
+	margin-right: 8px;
+	line-height: 35px;
+}
+header .head .land .tip{
+	font-size: 14px;
+	font-weight: 300;
+}
+header .head>span{
+	float: right;
+	text-align: right;
+	line-height: 44px;
+}
+
+/*评分*/
+.scoreBox{
+	height:150px;
+	background-color: #fff;
+	margin-top:50px;
+	padding-top:10px;
+}
+.scoreBox .score{
+	margin:0 auto;
+	height: 85px;
+	width: 85px;
+	background-color: orange;
+	border-radius: 50%;
+	position: relative;
+}
+.scoreBox .score .sc{
+	color:#fff;
+	font-size: 35px;
+	font-weight: bold;
+	position: absolute;
+	top:30px;
+	left: 17px;
+}
+.scoreBox .score p{
+	position: absolute;
+	display: block;
+	width: 100%;
+	text-align: center;
+	top:56px;
+	color: #fff;
+	font-size: 10px;
+	letter-spacing: 2px;
+	font-weight: 100;
+}
+.scoreBox .score .fen{
+	position: absolute;
+	top:37px;
+	left: 65px;
+	color: #fff;
+	font-size:10px;
+}
+.scoreBox>p{
+	display: block;
+	text-align: center;
+	font-size: 13px;
+	color: #000;
+	font-weight: 300;
+	margin-top:10px
+}
+.renew{
+	height:50px;
+	background-color: #fff;
+	margin-top:8px;
+	padding:0 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.renew>p{
+	display: block;
+	line-height: 50px;
+	font-size: 15px;
+	color: #000000;
+	width:40%;
+	margin:0;
+}
+.renew .right{
+	line-height: 50px;
+	display: flex;
+}
+.renew .right span{
+	font-size: 15px;
+	line-height: 50px;
+	margin-right: 5px;
+	color:green;
+}
+.renew .right p{
+	font-size: 12px;
+}
+
+/*各种功能*/
+.menuBox,.third{
+	margin-top:8px;
+	background-color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+}
+.menuBox a,.third a{
+	width:25%;
+	text-align: center;
+	padding: 15px 0 8px;
+	overflow: hidden;
+	color: #000;
+	position: relative;
+}
+.menuBox a i,.third a i{
+	margin-bottom: 3px;
+}
+.menuBox a p,.third a p{
+	font-size: 13px;
+}
+.menuBox a .tip{
+	position: absolute;
+	font-size: 9px;
+	bottom:0;
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: orange;
+}
+.menuBox>p{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.menuBox>p i{
+	font-size: 21px;
+	font-weight: 600;
+}

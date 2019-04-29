@@ -1,0 +1,208 @@
+*{
+	font-family: "微软雅黑";
+}
+.mui-placeholder{
+	display: none !important;
+}
+.header{
+	/*height:80px;*/
+	background: #fff;
+}
+#searchWrp{
+	width:90%;
+	float: left;
+}
+#searchBox{
+	/*height:50px;*/
+	/*margin-top:14px;*/
+}
+#search{
+	position: absolute;
+	top:0px;
+	left: 5px;
+	/*font-size: 20px;*/
+	font-weight: 900;
+	color:#777;
+}
+#search p{
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 500;
+	color:#999;
+	margin-left: 7px;
+}
+#sao{
+	position: absolute;
+	display: block;
+	top:-1px;
+	right: 5px;
+	font-size: 27px;
+	/*font-weight: 900;*/
+	color:#777;
+}
+/*下载按钮*/
+.header>a{
+	display: block;
+	width: 10%;
+	/*height:80px;*/
+	color: #999;
+	/*line-height: 80px;*/
+}
+.header>a .i{
+	font-size: 22px;
+	text-align: center;
+	display: block;
+	width: 20px;
+	height:26px;
+	margin:5px 43% !important;
+	padding: 0 !important;
+	border-bottom: 3px solid #ccc;
+}
+
+.menu .content{
+	display: flex;
+	text-align: center;
+	padding-top: 13px;
+	background-color: #fff;
+	/*margin-top: 45px;*/
+}
+.menu .content a{
+	flex:1;
+}
+
+.hot-soft{
+	padding-top: 12px;
+	background-color: #f2f2f2;
+	border:1px solid transparent;
+	/*margin-top:12px;*/
+}
+.hot-soft .title{
+	padding:12px;
+	height:50px;
+	text-align: left;
+	background-color: #fff;
+	overflow: hidden;
+}
+.hot-soft .title h4{
+	margin-top: -3px;
+	float: left;
+	width: 50%;
+	letter-spacing: 2px;
+}
+.hot-soft .title h4 p{
+	margin-top: 7px;
+	color: orange;
+	font-size: 10px;
+	letter-spacing: 2px;
+}
+.hot-soft .title span{
+	float: right;
+	font-size: 31px;
+	color:#666;
+}
+.hot-soft .items{
+	/*margin-top:26px;*/
+}
+.hot-soft .items a{
+	background-color: #fff;
+	display: flex;
+	padding: 0 12px;
+	padding: 20px 10px 10px;
+	margin-top:12px;
+}
+.hot-soft .items img{
+	height:70px;
+	width:70px;
+	border:1px solid #ccc;
+	border-radius: 6px;
+}
+.hot-soft .items div{
+	flex: 1;
+	box-sizing: border-box;
+	padding-left: 14px;
+	overflow: hidden;
+}
+.hot-soft .items div p{
+	margin-bottom: 12px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.hot-soft .items div p:nth-child(1){
+	font-size: 17px;
+	font-weight: 600;
+	/* margin-top:12px; */
+	color:#000;
+}
+.hot-soft .items div p:nth-child(2){
+	font-size: 15px;
+	margin-top:-10px;
+	color:#333;
+}
+.hot-soft .items div p:nth-child(3){
+	font-size: 10px;
+	margin-top:-10px;
+	color:#999;
+}
+.hot-soft .items .download{
+	width:70px;
+	height:34px;
+	color:blue;
+	line-height: 0;
+	padding:15px;
+	margin-top:20px;
+	border:2px solid skyblue;
+	border-radius: 5px;
+}
+
+/*横向滚动*/
+#scroll_h{
+	padding-top: 12px;
+	background-color: #f2f2f2;
+	height:203px;
+	overflow: hidden;
+}
+#scroll_box{
+	/* margin-top:26px; */
+	height:140px;
+	background-color: #fff;
+}
+#scroll_box a .pic{
+	height:70px;
+	width:70px;
+	border:1px solid #ccc;
+	border-radius: 6px;
+}
+#scroll_box a .name{
+	line-height: 1;
+	margin-bottom: 0;
+	margin-top:-6px;
+	font-size: 16px;
+	font-weight: bold;
+	color:#000;
+}
+#scroll_box a .download{
+	color:blue;
+	line-height: 0;
+	padding:15px;
+	margin-top:6px;
+	border:2px solid skyblue;
+	border-radius: 5px;
+}
+/*标题*/
+#scroll_h .title{
+	padding:12px;
+	height:50px;
+	text-align: left;
+	background-color: #fff;
+}
+#scroll_h .title h4{
+	float: left;
+	width: 50%;
+	letter-spacing: 2px;
+}
+#scroll_h .title span{
+	float: right;
+	font-size: 31px;
+	color:#666;
+}

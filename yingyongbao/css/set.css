@@ -1,0 +1,32 @@
+*{
+	font-family: "微软雅黑";
+}
+.switch .label{
+	width:60%;
+	font-family: "微软雅黑";
+}
+.switch .box{
+	margin-top:8px;
+	width:58px;
+	height:23px;
+}
+.switch .box .circle{
+	top:-1px;
+	width:20px;
+	height:20px;
+}
+.mui-switch.mui-active:before {
+    right: auto;
+    left: 12px;
+    content: 'On';
+    color: #fff;
+}
+.mui-switch:before {
+    font-size: 12px;
+    position: absolute;
+    top: 0px;
+    right: 11px;
+    content: 'Off';
+    text-transform: uppercase;
+    color: #999;
+}
